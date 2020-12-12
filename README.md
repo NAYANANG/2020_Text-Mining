@@ -18,7 +18,7 @@
 
 ## Project Requirement 
 ※ 위의 '진행 순서'의 순서에 따라서 확인하실 수 있습니다.
-실행 환경 :  jupyter notebook
+(실행 환경 :  jupyter notebook)
 
     1.  
         from selenium import webdriver
