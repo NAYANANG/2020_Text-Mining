@@ -16,7 +16,8 @@
   7. 테스트
 
 
-## Project Requirement (by '진행순서')
+## Project Requirement 
+※ 위의 '진행 순서'의 순서에 따라서 확인하실 수 있습니다.
 실행 환경 :  jupyter notebook
 
     1.  
@@ -44,7 +45,8 @@
         from sklearn.feature_extraction.text import TfidfVectorizer
         from sklearn.metrics.pairwise import cosine_similarity
    
-## Project 실행 (master branch 기준)
+## Project 실행 
+※ master branch 기준으로 실행하면 됩니다.
   1. `COVID_Crawling`/`COVID_KTV국민방송.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   2. `POS_Tag`/`POS_Tagging_코로나방역.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   3. `TF_IDF`/`TF-IDF.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
