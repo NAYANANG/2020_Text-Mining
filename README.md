@@ -55,7 +55,7 @@
 
 ## Author
     오서연 
-    - E-mail : dsp12357@gmail.com
+    - E-mail : SYO99@gmail.com
     이상민
     - E-mail : dsp12357@gmail.com
     김주현  
