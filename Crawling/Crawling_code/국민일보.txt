@@ -1,0 +1,77 @@
+#국민일보
+browser=webdriver.Chrome('chromedriver.exe')
+url=[]
+for i in range(1,8):
+    browser.get('http://www.kmib.co.kr/search/searchResult.asp?searchWord=%uCF54%uB85C%uB098%uBC29%uC5ED&pageNo={}&period='.format(i))
+    html=browser.page_source
+    soup=BeautifulSoup(html,'html.parser')
+    attr=soup.select('div.search_list > div.search_nws > dl >dt >a')
+    for urls in attr:
+        url.append(urls['href'])
+
+dict={}
+for i in range(len(url)):
+    browser.get(url[i])
+    time.sleep(1)
+    html=browser.page_source
+    soup=BeautifulSoup(html,'html.parser')
+    title=soup.select('div.nwsti > h3')
+    title=title[0].text
+    title=title.replace('\r','').replace('\n','').replace('\t','')
+    text=soup.find('div',{'id':'articleBody'}).text
+    text=text.replace('\n','').replace('\t','').replace('\r','').replace('\xa0','')
+    dict[title]=text
+
+with open('국민일보_의료정책.csv','w',-1,encoding='utf-8') as f:
+    w=csv.writer(f)
+    w.writerow(dict.keys())
+    w.writerow(dict.values())
+
+with open('국민일보_부동산정책.csv','w',-1,encoding='utf-8') as f:
+    w=csv.writer(f)
+    w.writerow(dict.keys())
+    w.writerow(dict.values())
+
+with open('국민일보_코로나방역.csv','w',-1,encoding='utf-8') as f:
+    w=csv.writer(f)
+    w.writerow(dict.keys())
+    w.writerow(dict.values())
+
+a=pd.read_csv('C:/Users/dsp12/Downloads/국민일보_의료정책.csv',encoding='utf-8')
+a=a.transpose()
+b=list
+title=b(a.index)
+c=list
+text=a[0]
+text=c(text)
+source=pd.DataFrame({'Title':title,'Text':text})
+source=source.iloc[:60]
+source['Press']='국민일보'
+source=source[['Press','Title','Text']]
+source.to_csv('국민일보_의료정책.csv',encoding='utf-8-sig')
+
+a=pd.read_csv('C:/Users/dsp12/Downloads/국민일보_부동산정책.csv',encoding='utf-8')
+a=a.transpose()
+b=list
+title=b(a.index)
+c=list
+text=a[0]
+text=c(text)
+source=pd.DataFrame({'Title':title,'Text':text})
+source=source.iloc[:60]
+source['Press']='국민일보'
+source=source[['Press','Title','Text']]
+source.to_csv('국민일보_부동산정책.csv',encoding='utf-8-sig')
+	
+a=pd.read_csv('C:/Users/dsp12/Downloads/국민일보_코로나방역.csv',encoding='utf-8')
+a=a.transpose()
+b=list
+title=b(a.index)
+c=list
+text=a[0]
+text=c(text)
+source=pd.DataFrame({'Title':title,'Text':text})
+source=source.iloc[:60]
+source['Press']='국민일보'
+source=source[['Press','Title','Text']]
+source.to_csv('국민일보_코로나방역.csv',encoding='utf-8-sig')
