@@ -100,9 +100,9 @@ Keras==2.2.4
         import keras
 
 ## Project 실행
-**※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.
+**※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.**
 
-(본 프로젝트의 코드는 jupyter notebook 환경에서 작성 하였습니다.)**
+**(본 프로젝트의 코드는 jupyter notebook 환경에서 작성 하였습니다.)**
 
   1. `Crawling`/`Crawling_code`/`KTV.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   2. `POS_Tag`/`POS_Tagging_코로나방역.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
