@@ -49,9 +49,15 @@
     4.
         from sklearn.feature_extraction.text import TfidfVectorizer
         from sklearn.metrics.pairwise import cosine_similarity
+        
     5. (1과 동일)
      
     6.  Labeling
+        from konlpy.tag import Komoran
+        import pandas as pd
+        import numpy as np
+        import os
+        import matplotlib.pyplot as plt
  
     7.  Data-Ready
 
