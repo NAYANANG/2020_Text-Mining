@@ -6,7 +6,7 @@
     * 정치적 성향 분류 기준 : KTV국민방송
     * 그 외 분류 대상 언론사 :  '한국경제TV', 'CHANNELA', '한겨례', 연합뉴스', '세계일보', '문화일보', '국민일보', 'TV조선', 'SBSCNBC', 'SBS', 'news1', 'MBN>뉴스', 'mbc'  
 
-* step index
+* Processing step index
   1. 데이터 수집 (크롤링)
   2. 데이터 전처리 (POS Tag 등)
   3. TF-IDF를 통해 언론사 마다 사용한 주요 단어들 파악
@@ -17,15 +17,16 @@
   8. 모델적용 (성능평가 포함)
 
       ※ step1~4 진행 후 KTV와의 cosine similarity를 진행 한 결과, '코로나방역'키워드 기사에 대하여 언론사 cosine similarity(유사도 점수 분포 0.2이상 0.7으로>서 분류에 적합한 결과였다고 판단.)결과가 추후 기사의 정치 성향 분류에 있어서 가장 적합하게 나올 것이라 판단하여 step5에서 '코로나방역'에 대한 데이터를 각 언>론사 마다 60개 데이터에서 100개로 늘려 수집하기로 결정하였습니다. 데이터 재 수집 후에는 step2~4를 다시 진행하였습니다.
+      ∴step5이후 부터는 master branch의 'COVID' 폴더 안의 데이터를 사용하여 step6~8을 진행하였습니다
 
 
 
 # Getting started
 ## Install dependencies
-※ 위의 '진행 순서'의 순서에 따라서 확인하실 수 있습니다.
-(실행 환경 :  jupyter notebook)
+**※ 위의 'Processing step index'의 index를 따라가며 확인하실 수 있습니다.**
 
-    1. Crawling Step
+
+    1. step1
         from selenium import webdriver
         import os
         from bs4 import BeautifulSoup
@@ -34,25 +35,26 @@
         import csv
         import urllib.request as ur
 
-    2. Preprocessing Step (POS_Tagging)
+    2. step2
         from konlpy.tag import Komoran
         import pandas as pd
         import os
         import numpy as np
 
-    3. Preprocessing Step (TF-IDF)
+    3. step3
         import pandas as pd
         import numpy as np
         import pickle
         from sklearn.feature_extraction.text import TfidfVectorizer
 
-    4.
+    4. step4
         from sklearn.feature_extraction.text import TfidfVectorizer
         from sklearn.metrics.pairwise import cosine_similarity
         
-    5. (1과 동일)
+    5. step5
+        (step1의 사항과 동일)
      
-    6. Labeling Step
+    6. step6
         from konlpy.tag import Komoran
         import pandas as pd
         import numpy as np
@@ -73,7 +75,10 @@
         import keras
 
 ## Project 실행
-※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.
+**※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.
+
+(본 프로젝트의 코드는 jupyter notebook 환경에서 작성 하였습니다.)**
+
   1. `Crawling`/`Crawling_code`/`KTV.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   2. `POS_Tag`/`POS_Tagging_코로나방역.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   3. `TF_IDF`/`TF-IDF.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
