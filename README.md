@@ -99,5 +99,6 @@
     - E-mail : jjjuhyun4502@gmail.com
 
 ## License
- 본 프로젝트에 사용된 코드들은 google 검색을 통해 인용한 코드들로서 온전한 라이센스가 본 저자들에게 있지 않음을 밝힙니다.
+ 본 프로젝트의 권한은 Author member들에게 있습니다. 
+ 단, 예외적으로 step1~8에 사용된 코드 작성시 [이 자료](https://wikidocs.net/book/2155) 를 활용하였음을 밝힙니다.
                                                                          
