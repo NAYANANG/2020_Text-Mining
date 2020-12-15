@@ -51,7 +51,7 @@ Keras==2.2.4
 **※ 위의 'Processing step index'의 index를 따라가며 확인하실 수 있습니다.**
 
 
-    step1
+    **step1**
         from selenium import webdriver
         import os
         from bs4 import BeautifulSoup
@@ -60,40 +60,40 @@ Keras==2.2.4
         import csv
         import urllib.request as ur
 
-    step2
+    **step2**
         from konlpy.tag import Komoran
         import pandas as pd
         import os
         import numpy as np
 
-    step3
+    **step3**
         import pandas as pd
         import numpy as np
         import pickle
         from sklearn.feature_extraction.text import TfidfVectorizer
 
-    step4
+    **step4**
         from sklearn.feature_extraction.text import TfidfVectorizer
         from sklearn.metrics.pairwise import cosine_similarity
         
-    step5
+    **step5**
         (step1의 사항과 동일)
      
-    step6
+    **step6**
         from konlpy.tag import Komoran
         import pandas as pd
         import numpy as np
         import os
         import matplotlib.pyplot as plt
  
-    step7
+    **step7**
         import pandas as pd
         import numpy as np
         import matplotlib.pyplot as plt
         import glob
         import os
 
-    step8
+    **step8**
         from tensorflow.keras.layers import SimpleRNN,Embedding,Dense,LSTM,Bidirectional
         from tensorflow.keras.models import Sequential
         from keras import optimizers
