@@ -52,16 +52,21 @@
         
     5. (1과 동일)
      
-    6.  Labeling
+    6.  Labeling Step
         from konlpy.tag import Komoran
         import pandas as pd
         import numpy as np
         import os
         import matplotlib.pyplot as plt
  
-    7.  Data-Ready
+    7.  Data-Ready Step
+        import pandas as pd
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import glob
+        import os
 
-    8. 
+    8.  Data-Modeling Step
 
 ## Project 실행
 ※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.
