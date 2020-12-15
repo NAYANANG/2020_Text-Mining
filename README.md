@@ -7,7 +7,7 @@
     * 그 외 분류 대상 언론사 :  '한국경제TV', 'CHANNELA', '한겨례', 연합뉴스', '세계일보', '문화일보', '국민일보', 'TV조선', 'SBSCNBC', 'SBS', 'news1', 'MBN>뉴스', 'mbc'  
 
 * Processing step index
-  1. 데이터 수집 (크롤링)
+   step1. 데이터 수집 (크롤링)
   2. 데이터 전처리 (POS Tag 등)
   3. TF-IDF를 통해 언론사 마다 사용한 주요 단어들 파악
   4. cosine similarity ('KTV국민방송'과 각 언론사들의 유사도)
