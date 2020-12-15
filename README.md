@@ -64,15 +64,18 @@
   3. `TF_IDF`/`TF-IDF.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   4. `Cosine_Similarity`/`cosine_similarity.ipynb`
   5. `COVID_Crawling`/`COVID_KTV국민방송.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
-  6.
-  7.
+  6. `Labeling`/ `Labeling_code`/ `Labeling_JTBC.ipynb` (JTBC 이하 모든 언론사에 대하여 실행)
+  7. (1) `Data_Ready`/ `code`/ `Data_combine_shuffle.ipynb`
+     (2) `Data_Ready`/ `code`/ `Data_Padding.ipynb`
+  8.  `Model`/`Modeling.ipynb `
+
 
 ## Author
-    :bear: 오서연
+    오서연
     - E-mail : SYO99@gmail.com
-    :rabbit: 이상민
+    이상민
     - E-mail : dsp12357@gmail.com
-    :cat: 김주현
+    김주현
     - E-mail : jjjuhyun4502@gmail.com
 
 ## License
