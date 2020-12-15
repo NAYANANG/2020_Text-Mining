@@ -4,7 +4,8 @@
 
 * **선정 언론사**
     * 정치적 성향 분류 기준 : KTV국민방송
-    * 그 외 분류 대상 언론사 :  '한국경제TV', 'CHANNELA', '한겨례', 연합뉴스', '세계일보', '문화일보', '국민일보', 'TV조선', 'SBSCNBC', 'SBS', 'news1', 'MBN뉴스', 'mbc'  
+    * 그 외 분류 대상 언론사 :  '한국경제TV', 'CHANNELA', '한겨례', 연합뉴스', '세계일보', '문화일보', '국민일보', 'TV조선', 'SBSCNBC', 'SBS', 'news1', 'MBN뉴스', 'mbc'     
+
 
 
 * **Processing step index**
@@ -51,7 +52,7 @@ Keras==2.2.4
 **※ 위의 'Processing step index'의 index를 따라가며 확인하실 수 있습니다.**
 
 
-    **step1**
+    **Step 1**
         from selenium import webdriver
         import os
         from bs4 import BeautifulSoup
@@ -60,44 +61,49 @@ Keras==2.2.4
         import csv
         import urllib.request as ur
 
-    **step2**
+    **Step 2**
         from konlpy.tag import Komoran
         import pandas as pd
         import os
         import numpy as np
 
-    **step3**
+    **Step 3**
         import pandas as pd
         import numpy as np
         import pickle
         from sklearn.feature_extraction.text import TfidfVectorizer
 
-    **step4**
+    **Step 4**
         from sklearn.feature_extraction.text import TfidfVectorizer
         from sklearn.metrics.pairwise import cosine_similarity
         
-    **step5**
+    **Step 5**
         (step1의 사항과 동일)
      
-    **step6**
+    **Step 6**
         from konlpy.tag import Komoran
         import pandas as pd
         import numpy as np
         import os
         import matplotlib.pyplot as plt
  
-    **step7**
+    **Step 7**
         import pandas as pd
         import numpy as np
         import matplotlib.pyplot as plt
         import glob
         import os
 
-    **step8**
+    **Step 8**
         from tensorflow.keras.layers import SimpleRNN,Embedding,Dense,LSTM,Bidirectional
         from tensorflow.keras.models import Sequential
         from keras import optimizers
         import keras
+        import numpy as np
+        import pandas as pd
+        from keras.utils import to_categorical
+        from sklearn.model_selection import KFold
+        import matplotlib.pyplot as plt
 
 ## Project 실행
 **※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.**
