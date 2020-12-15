@@ -117,7 +117,9 @@ Keras==2.2.4
   2. `POS_Tag`/`POS_Tagging_코로나방역.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   3. `TF_IDF`/`TF-IDF.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
   4. `Cosine_Similarity`/`cosine_similarity.ipynb`
-  5. `COVID_Crawling`/`COVID_KTV국민방송.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행)
+  5. (1)`COVID`/`COVID_Crawling`/`COVID_KTV국민방송.ipynb` (KTV국민방송 이하 모든 언론사에 대하여 실행) 
+     (2)`COVID`/`COVID_Cosine_Similarity`/`COVID_cosine_similarity.ipynb`
+
   6. `Labeling`/ `Labeling_code`/ `Labeling_JTBC.ipynb` (JTBC 이하 모든 언론사에 대하여 실행)
   7. (1) `Data_Ready`/ `code`/ `Data_combine_shuffle.ipynb`
      (2) `Data_Ready`/ `code`/ `Data_Padding.ipynb`
