@@ -68,11 +68,11 @@
   7.
 
 ## Author
-    오서연
+    :bear: 오서연
     - E-mail : SYO99@gmail.com
-    이상민
+    :rabbit: 이상민
     - E-mail : dsp12357@gmail.com
-    김주현
+    :cat: 김주현
     - E-mail : jjjuhyun4502@gmail.com
 
 ## License
