@@ -4,12 +4,12 @@
 
 * 선정 언론사
     * 정치적 성향 분류 기준 : KTV국민방송
-    * 그 외 분류 대상 언론사 :  '한국경제TV', 'CHANNELA', '한겨례', 연합뉴스', '세계일보', '문화일보', '국민일보', 'TV조선', 'SBSCNBC', 'SBS', 'news1', 'MBN>뉴스', 'mbc'
+    * 그 외 분류 대상 언론사 :  '한국경제TV', 'CHANNELA', '한겨례', 연합뉴스', '세계일보', '문화일보', '국민일보', 'TV조선', 'SBSCNBC', 'SBS', 'news1', 'MBN>뉴스', 'mbc'  
 
 * step index
   1. 데이터 수집 (크롤링)
   2. 데이터 전처리 (POS Tag 등)
-  3. TF-IDF
+  3. TF-IDF를 통해 언론사 마다 사용한 주요 단어들 파악
   4. cosine similarity ('KTV국민방송'과 각 언론사들의 유사도)
   5. COVID 데이터 추가 수집 및 전처리 (및 2~4단계 함께 진행)
   6. 데이터 라벨링 ('KTV국민방송'과의 유사도를 기준으로 '친정부'/'반정부'/'중립')
@@ -25,7 +25,7 @@
 ※ 위의 '진행 순서'의 순서에 따라서 확인하실 수 있습니다.
 (실행 환경 :  jupyter notebook)
 
-    1.
+    1. Crawling Step
         from selenium import webdriver
         import os
         from bs4 import BeautifulSoup
@@ -34,13 +34,13 @@
         import csv
         import urllib.request as ur
 
-    2.
+    2. Preprocessing Step (POS_Tagging)
         from konlpy.tag import Komoran
         import pandas as pd
         import os
         import numpy as np
 
-    3.
+    3. Preprocessing Step (TF-IDF)
         import pandas as pd
         import numpy as np
         import pickle
@@ -52,16 +52,25 @@
         
     5. (1과 동일)
      
-    6.  Labeling
+    6. Labeling Step
         from konlpy.tag import Komoran
         import pandas as pd
         import numpy as np
         import os
         import matplotlib.pyplot as plt
  
-    7.  Data-Ready
+    7. Data-Ready Step
+        import pandas as pd
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import glob
+        import os
 
-    8. 
+    8. Data-Modeling Step
+        from tensorflow.keras.layers import SimpleRNN,Embedding,Dense,LSTM,Bidirectional
+        from tensorflow.keras.models import Sequential
+        from keras import optimizers
+        import keras
 
 ## Project 실행
 ※ master branch 기준, `폴더`/.../`코드파일명.ipynb` 입니다.
