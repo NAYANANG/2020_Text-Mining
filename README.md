@@ -23,6 +23,23 @@
 
 # Getting started
 ## Install dependencies
+```
+python3.x
+
+selenium==3.141.0
+bs4==0.0.1
+beautifulsoup4==4.9.1
+pandas==1.1.2
+konlpy==0.5.1
+numpy==1.19.2
+pickleshare==0.7.5
+sklearn==0.0
+matplotlib==3.3.2
+tensorflow==1.12.0
+Keras==2.2.4
+```
+
+
 **※ 위의 'Processing step index'의 index를 따라가며 확인하실 수 있습니다.**
 
 
@@ -61,14 +78,14 @@
         import os
         import matplotlib.pyplot as plt
  
-    7. Data-Ready Step
+    7. step7
         import pandas as pd
         import numpy as np
         import matplotlib.pyplot as plt
         import glob
         import os
 
-    8. Data-Modeling Step
+    8. step8
         from tensorflow.keras.layers import SimpleRNN,Embedding,Dense,LSTM,Bidirectional
         from tensorflow.keras.models import Sequential
         from keras import optimizers
